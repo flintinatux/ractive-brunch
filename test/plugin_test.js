@@ -24,7 +24,7 @@ describe('Plugin', function() {
 
       expect(error).not.to.be.ok;
       r = new Ractive({'template': eval(data), 'data': {'weak': 'wat'}});
-      expect(r.renderHTML()).to.equal(expected);
+      expect(r.toHTML()).to.equal(expected);
       done();
     });
   });

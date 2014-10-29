@@ -20,6 +20,5 @@ module.exports = class RactiveCompiler
       callback error, result
 
   include: [
-    (sysPath.join __dirname, '..', 'vendor',
-      'Ractive.runtime-0.3.6.js')
+    (sysPath.join __dirname, '..', 'node_modules', 'ractive', 'ractive.runtime.js')
   ]
